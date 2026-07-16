@@ -8,3 +8,11 @@ chmod 666 config.php
 
 # Make the required directories writable
 chmod 777 cache/ files/ store/ images/avatars/upload/
+
+
+
+# Docker container build and updates
+
+
+# Check the avatar settings with old forum
+set custom avatar size **General>AvatarSettings** and set the values at least 200px/200px and 50000 byte
