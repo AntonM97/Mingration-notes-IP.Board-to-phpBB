@@ -167,6 +167,8 @@ there are additional inputs for 666 based on language settings (maybe it will be
 
 
 
+During database installation the hostname is not `localhost` but `db`
+
 ## Mingration-notes-IP.Board-to-phpBB
 
 1. rename root directory(containing index.php and other folders) to `src`
