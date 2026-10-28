@@ -154,7 +154,17 @@ If that succeeds, Compose can parse the YAML and environment variables. It does 
 Once both the Dockerfile and database image are ready, run:
 bash
 
-docker compose up -d --build
+`docker compose up -d --build`
+
+
+
+
+`chmod 777 ./cache/ ./cache/themes/ ./uploads/ ./uploads/avatars/ ./admin/backups/`
+
+`chmod 666 ./inc/settings.php ./inc/config.php ./inc/languages/`
+
+there are additional inputs for 666 based on language settings (maybe it will be required later)
+
 
 
 ## Mingration-notes-IP.Board-to-phpBB
