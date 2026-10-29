@@ -152,16 +152,29 @@ If that succeeds, Compose can parse the YAML and environment variables. It does 
 4. Build and start the containers
 
 Once both the Dockerfile and database image are ready, run:
-bash
-
+```bash
 `docker compose up -d --build`
+```
 
 
 
 
 `chmod 777 ./cache/ ./cache/themes/ ./uploads/ ./uploads/avatars/ ./admin/backups/`
 
+./cache/
+./cache/themes/
+./uploads/
+./uploads/avatars/
+./admin/backups/ (optional)
+
+
 `chmod 666 ./inc/settings.php ./inc/config.php ./inc/languages/`
+
+./inc/settings.php
+./inc/config.php (you must rename config.default.php to config.php first)
+./inc/languages/*your_language*/*all files* (optional)
+./inc/languages/*your_language*/admin/*all files* (optional)
+
 
 there are additional inputs for 666 based on language settings (maybe it will be required later)
 
@@ -177,9 +190,9 @@ During database installation the hostname is not `localhost` but `db`
 ## Make the config file writable
 chmod 666 config.php
 
+
 ## Make the required directories writable
 chmod 777 cache/ files/ store/ images/avatars/upload/
-
 
 
 ## Docker container build and updates
