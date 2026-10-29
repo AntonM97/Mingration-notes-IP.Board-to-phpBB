@@ -182,6 +182,24 @@ there are additional inputs for 666 based on language settings (maybe it will be
 
 During database installation the hostname is not `localhost` but `db`
 
+
+## Build the main site in the container
+for being more precise the site has connections to 2 databases so I will restore them from backups
+
+
+
+`docker compose exec -T mariadb sh -c 'exec mysql -u root -p"$MARIADB_ROOT_PASSWORD" myapp' < backup.sql`
+
+
+
+
+
+
+
+
+
+
+
 ## Mingration-notes-IP.Board-to-phpBB
 
 1. rename root directory(containing index.php and other folders) to `src`
